@@ -1,4 +1,4 @@
----
+﻿---
 name: trading-analysis
 description: Trigger on requests relating to trading, technical analysis, algorithmic trading, backtesting, or market data evaluation. Uses the comprehensive Trading Agent Skills Library.
 ---
@@ -7,7 +7,7 @@ description: Trigger on requests relating to trading, technical analysis, algori
 > Sourced from [tradermonty/claude-trading-skills](https://github.com/tradermonty/claude-trading-skills)
 > Selected & consolidated: technical-analyst · trader-memory-core · macro-regime-detector · signal-postmortem · edge-signal-aggregator · edge-strategy-designer
 
----
+***
 
 ## TABLE OF CONTENTS
 
@@ -22,7 +22,7 @@ description: Trigger on requests relating to trading, technical analysis, algori
 9. [Outcome Classification Guide](#9-outcome-classification-guide)
 10. [Signal Weighting Framework](#10-signal-weighting-framework)
 
----
+***
 
 ## 1. TECHNICAL ANALYST
 
@@ -123,7 +123,7 @@ Report sections:
 - Provide specific price levels — not vague descriptions
 - Scenarios must be distinct and mutually exclusive
 
----
+***
 
 ## 2. TRADER MEMORY CORE
 
@@ -198,7 +198,7 @@ Shows win rate, average P&L%, per-type breakdown across all closed theses.
 - **Origin:** source skill, screening grade, raw provenance
 - **Outcome:** P&L, holding days, MAE/MFE, lessons learned
 
----
+***
 
 ## 3. MACRO REGIME DETECTOR
 
@@ -279,7 +279,7 @@ Detect structural macro regime transitions using monthly-frequency cross-asset r
 | Target | Regime transitions | 10–20% corrections | Breadth health |
 | API calls | ~10 | ~33 | 0 (free CSV) |
 
----
+***
 
 ## 4. SIGNAL POSTMORTEM
 
@@ -380,7 +380,7 @@ python3 postmortem_analyzer.py \
 3. **Minimum Sample Size** — Weight adjustments require 20+ signals for statistical validity
 4. **Feedback Loop Closure** — Results flow back to improve signal aggregation and skill quality
 
----
+***
 
 ## 5. EDGE SIGNAL AGGREGATOR
 
@@ -477,7 +477,7 @@ python3 aggregate_signals.py \
 - `edge_signal_aggregator_YYYY-MM-DD_HHMMSS.json` — structured data
 - `edge_signal_aggregator_YYYY-MM-DD_HHMMSS.md` — ranked conviction dashboard with provenance, contradictions, and dedup log
 
----
+***
 
 ## 6. EDGE STRATEGY DESIGNER
 
@@ -522,7 +522,7 @@ python3 design_strategy_drafts.py \
 - `strategy_drafts/run_manifest.json` — run summary
 - `exportable_tickets/*.yaml` — for downstream `export_candidate.py`
 
----
+***
 
 ## 7. TECHNICAL ANALYSIS FRAMEWORK REFERENCE
 
@@ -595,7 +595,7 @@ python3 design_strategy_drafts.py \
 - Forcing patterns that aren't clearly there
 - Being too certain (markets are probabilistic)
 
----
+***
 
 ## 8. REGIME DETECTION METHODOLOGY REFERENCE
 
@@ -633,7 +633,7 @@ Daily OHLCV (600 days, ~2.4 years)
 3. **Regime overlap** — Real markets often exhibit characteristics of multiple regimes simultaneously
 4. **Historical bias** — Classification rules derived from post-2000 patterns
 
----
+***
 
 ## 9. OUTCOME CLASSIFICATION GUIDE
 
@@ -659,7 +659,7 @@ Daily OHLCV (600 days, ~2.4 years)
 
 **Multiple Holding Periods:** A signal can be TRUE_POSITIVE at 5 days but FALSE_POSITIVE at 20 days. Both recorded.
 
----
+***
 
 ## 10. SIGNAL WEIGHTING FRAMEWORK
 
